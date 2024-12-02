@@ -1,0 +1,16 @@
+/* grouping selectors use ',' to separate as logical or statements */
+.left-button,
+.right-button {
+  font-size: 28px;
+  font-family: Helveitca, "Times New Roman", sans-serif;
+}
+
+/* unique not shared properties */
+.left-button {
+  background-color: black;
+  color: white;
+}
+/* unique not shared properties */
+.right-button {
+  background-color: yellow;
+}
