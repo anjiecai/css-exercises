@@ -8,35 +8,37 @@ body {
   font-weight: 800;
 }
 
-.small-para {
-  font-size: 14px;
-  font-weight: 800;
-}
-
 .para {
   font-size: 22px;
 }
 
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
+.small-para {
+  font-size: 14px;
+}
 
+/* both button and confirm apply to confirm-button and are class selectors */
+/* option 1: move buton first so .confirm applies */
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
-
-.child {
-  color: rgb(0, 0, 0);
-  font-weight: 800;
-  font-size: 14px;
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
 }
 
+/* chained selector */
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
+}
+
+/* apply to div of class .child that is a child of a div. Can use descendant or child combinator */
+div > .child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
 }

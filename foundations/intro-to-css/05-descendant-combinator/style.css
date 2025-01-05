@@ -27,9 +27,14 @@
 } */
 
 /* type + class */
-div .text {
-  background-color: yellow;
+.container .text {
   color: red;
-  font-size: 20px;
-  text-align: center;
+}
+
+.container.text {
+  color: blue;
+}
+
+p {
+  background-color: currentColor;
 }
