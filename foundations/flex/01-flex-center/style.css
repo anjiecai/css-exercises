@@ -1,8 +1,14 @@
+/* flex is set here */
 .container {
   background: dodgerblue;
   border: 4px solid midnightblue;
   width: 400px;
   height: 300px;
+  display: flex;
+  /* primary axis items */
+  justify-content: center;
+  /* cross axis items */
+  align-items: center;
 }
 
 .box {
